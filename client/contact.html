@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BottleCo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-green-500 to-green-700 text-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href="#" class="text-2xl font-bold">BottleCo</a>
+            <ul class="flex space-x-6">
+                <li><a href="client/index.html" class="hover:text-gray-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+                <li><a href="products.html" class="hover:text-gray-300">Products</a></li>
+                <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-green-900 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Contact Us</h1>
+            <p class="text-lg mt-4">We’d love to hear from you! Get in touch with us for any inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="bg-white shadow-lg rounded-lg p-8">
+                <h2 class="text-2xl font-bold mb-6 text-center">Get in Touch</h2>
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:outline-none focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:outline-none focus:ring-green-500 focus:border-green-500">
+                        </div>
+                    </div>
+                    <!-- Subject -->
+                    <div class="mt-6">
+                        <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                        <input type="text" id="subject" name="subject" required 
+                               class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:outline-none focus:ring-green-500 focus:border-green-500">
+                    </div>
+                    <!-- Message -->
+                    <div class="mt-6">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="5" required 
+                                  class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 text-gray-700 focus:outline-none focus:ring-green-500 focus:border-green-500"></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="mt-6 text-center">
+                        <button type="submit" 
+                                class="bg-green-500 text-white py-2 px-6 rounded hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-6 text-center">Our Location</h2>
+            <div class="relative w-full h-96">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093743!2d144.95565121531713!3d-37.81732797975133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f3f653a68a0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1630936581178!5m2!1sen!2sau" 
+                    class="absolute inset-0 w-full h-full border-0" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 BottleCo. All Rights Reserved.</p>
+            <p>Follow us on 
+                <a href="#" class="text-green-400 hover:underline">Twitter</a>, 
+                <a href="#" class="text-green-400 hover:underline">Facebook</a>, and 
+                <a href="#" class="text-green-400 hover:underline">Instagram</a>.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

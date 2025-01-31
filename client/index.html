@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottle Selling Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <script>
+        // Toggle mobile menu visibility
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Toggle Night Mode
+        function toggleNightMode() {
+            document.body.classList.toggle('bg-gray-800');
+            document.body.classList.toggle('text-gray-100');
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 p-4">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-teal-300 via-teal-400 to-teal-500 text-black py-4 shadow-md rounded-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo -->
+            <a href="#" class="font-bold text-2xl">BottleCo</a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-12">
+                <li><a href="index.html" class="hover:text-gray-800 text-xl font-bold">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-800 text-xl font-bold">About</a></li>
+                <li><a href="products.html" class="hover:text-gray-800 text-xl font-bold">Products</a></li>
+                <li><a href="contact.html" class="hover:text-gray-800 text-xl font-bold">Contact</a></li>
+            </ul>
+
+            <!-- Buttons -->
+            <div class="hidden md:flex items-center space-x-4">
+                <!-- Regular Buttons -->
+                <a href="login.html" class="bg-white text-teal-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition">Login</a>
+                <a href="signup.html" class="bg-teal-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-teal-700 transition">Sign Up</a>
+
+                <!-- Night Mode Button -->
+                <button 
+                    onclick="toggleNightMode()"
+                    class="bg-gray-800 text-white px-4 py-2 rounded-full font-semibold hover:bg-gray-700 transition">
+                    Night Mode
+                </button>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <button
+                class="md:hidden focus:outline-none" 
+                onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-r from-teal-300 via-teal-400 to-teal-500">
+            <ul class="flex flex-col space-y-2 px-4 py-2">
+                <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
+                <li><a href="about.html" class="block hover:text-gray-300">About</a></li>
+                <li><a href="products.html" class="block hover:text-gray-300">Products</a></li>
+                <li><a href="contact.html" class="block hover:text-gray-300">Contact</a></li>
+                <!-- Buttons in Mobile Menu -->
+                <li>
+                    <a href="login.html" class="block bg-white text-teal-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition mt-2">Login</a>
+                </li>
+                <li>
+                    <a href="signup.html" class="block bg-teal-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-teal-700 transition mt-2">Sign Up</a>
+                </li>
+                <li>
+                    <button 
+                        onclick="toggleNightMode()"
+                        class="block bg-gray-800 text-white px-4 py-2 rounded-full font-semibold hover:bg-gray-700 transition mt-2">
+                        Night Mode
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Hero Section -->
+   <section class="relative text-white h-screen overflow-hidden">
+    <!-- Video Background -->
+    <div class="absolute inset-0 w-full h-full">
+        <video autoplay muted loop class="w-full h-full object-cover">
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Content Overlay -->
+    <div class="relative z-10 container mx-auto text-center px-4 flex flex-col justify-center items-center h-full bg-green-00 bg-opacity-60">
+        <h1 class="text-4xl font-bold mb-4">Welcome to BottleCo</h1>
+        <p class="text-lg mb-8">Premium bottles for every purpose—designed for quality and sustainability.</p>
+        <a href="#" class="bg-white text-green-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-200">Shop Now</a>
+    </div>
+</section>
+    
+
+    <!-- Thumbnails Section -->
+    <section class="py-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-6">Our Best-Sellers</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src="https://images.pexels.com/photos/3195774/pexels-photo-3195774.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Glass Bottle" 
+                             class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Glass Bottle</h3>
+                        <p class="text-sm text-gray-600">$20.00 - Stylish and eco-friendly glass bottle.</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src="https://images.pexels.com/photos/3737800/pexels-photo-3737800.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Steel Bottle" 
+                             class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Steel Bottle</h3>
+                        <p class="text-sm text-gray-600">$25.00 - Durable and insulated steel bottle.</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div class="aspect-w-1 aspect-h-1">
+                        <img src="https://images.pexels.com/photos/11031202/pexels-photo-11031202.png?auto=compress&cs=tinysrgb&w=600&lazy=load" 
+                             alt="Plastic Bottle" 
+                             class="object-cover w-full h-full">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg">Reusable Plastic Bottle</h3>
+                        <p class="text-sm text-gray-600">$15.00 - Lightweight and reusable plastic bottle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 BottleCo. All Rights Reserved.</p>
+            <p class="text-sm">Follow us on 
+                <a href="#" class="text-green-400 hover:underline">Twitter</a> | 
+                <a href="#" class="text-green-400 hover:underline">Facebook</a> | 
+                <a href="#" class="text-green-400 hover:underline">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

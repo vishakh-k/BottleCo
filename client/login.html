@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Login Page Container -->
+    <div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-teal-300 via-teal-400 to-teal-500">
+        <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+            <!-- Title -->
+            <h2 class="text-2xl font-bold text-center text-teal-600 mb-6">Login to BottleCo</h2>
+
+            <!-- Form -->
+            <form action="#" method="POST" class="space-y-6">
+                <!-- Email Input -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-teal-500 focus:border-teal-500"
+                        placeholder="you@example.com">
+                </div>
+
+                <!-- Password Input -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        required 
+                        class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-teal-500 focus:border-teal-500"
+                        placeholder="Enter your password">
+                </div>
+
+                <!-- Remember Me and Forgot Password -->
+                <div class="flex items-center justify-between">
+                    <label class="flex items-center text-sm text-gray-600">
+                        <input type="checkbox" class="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded">
+                        <span class="ml-2">Remember me</span>
+                    </label>
+                    <a href="#" class="text-sm text-teal-600 hover:underline">Forgot password?</a>
+                </div>
+
+                <!-- Submit Button -->
+                <button 
+                    type="submit" 
+                    class="w-full bg-teal-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-teal-700 transition">
+                    Login
+                </button>
+            </form>
+
+            <!-- Divider -->
+            <div class="flex items-center my-6">
+                <div class="border-t border-gray-300 flex-grow"></div>
+                <span class="mx-4 text-gray-400">OR</span>
+                <div class="border-t border-gray-300 flex-grow"></div>
+            </div>
+
+            <!-- Social Login -->
+            <div class="space-y-4">
+                <button 
+                    class="w-full flex items-center justify-center bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition">
+                    <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12c0-5.522-4.478-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.99H7.898v-2.888h2.54v-2.2c0-2.513 1.493-3.89 3.773-3.89 1.093 0 2.234.195 2.234.195v2.451h-1.257c-1.242 0-1.63.771-1.63 1.562v1.882h2.773l-.443 2.888h-2.33v6.99C18.343 21.128 22 16.991 22 12z" />
+                    </svg>
+                    Login with Facebook
+                </button>
+                <button 
+                    class="w-full flex items-center justify-center bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-900 transition">
+                    <svg class="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 5.319 1.55 6.563 2.903L20.876 3.25c-1.588-1.566-3.636-2.656-6.408-2.656C7.408.594 3.999 4.45 3.999 8.781c0 2.435 1.167 4.704 3.04 6.01a7.887 7.887 0 01-2.5-1.404v.124c0 3.407 2.474 6.251 5.807 6.912a7.89 7.89 0 01-2.498.087 7.947 7.947 0 007.419 5.505c9.112 0 14.104-7.648 14.104-14.097 0-.204-.003-.406-.01-.609a9.934 9.934 0 002.444-2.5c-.897.398-1.865.673-2.857.785a4.899 4.899 0 002.143-2.656c-.929.55-1.956.948-3.057 1.162a4.888 4.888 0 00-8.31 4.459c0 .38.046.752.122 1.111a13.865 13.865 0 01-10.073-5.104 4.891 4.891 0 001.51 6.519 4.845 4.845 0 01-2.209-.611v.06c0 2.545 1.791 4.659 4.17 5.141a4.822 4.822 0 01-2.203.083c.618 1.927 2.416 3.333 4.54 3.372a9.765 9.765 0 01-6.041 2.077c-.392 0-.777-.022-1.159-.067a13.835 13.835 0 007.554 2.213c9.055 0 14.007-7.497 14.007-14.007 0-.213-.005-.425-.015-.635A10.015 10.015 0 0024 4.557a9.776 9.776 0 01-2.835.78A4.91 4.91 0 0022.46 3.73c-.939.556-1.977.952-3.075 1.167A4.902 4.902 0 0017.775 2.74 4.892 4.892 0 0013 6.567a4.9 4.9 0 00.122 1.111A13.875 13.875 0 014.243 3.045a4.89 4.89 0 001.516 6.526 4.86 4.86 0 01-2.2-.613v.063c0 2.543 1.796 4.661 4.175 5.145a4.842 4.842 0 01-2.2.08c.62 1.926 2.417 3.331 4.538 3.372a9.779 9.779 0 01-6.044 2.08c-.39 0-.775-.023-1.157-.068a13.875 13.875 0 007.559 2.213c9.052 0 13.997-7.495 13.997-13.997-.001-.21-.005-.419-.014-.627a9.992 9.992 0 002.44-2.505z" />
+                    </svg>
+                    Login with Google
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
